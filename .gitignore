@@ -4,4 +4,8 @@
 # except
 #!scripts
 
-!MISSIONS
+# Un-ignore the directory itself
+!MISSIONS/
+
+# Ensure all contents within the directory are tracked
+!MISSIONS/**
