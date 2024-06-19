@@ -1,0 +1,10 @@
+printf("GE03 started");
+
+FRAME player;   FRM_FindFrame(player, "_PLAYER_ 0");
+
+OnSignal(69) {
+    printf("GE03 received signal 69!");
+
+    HUMAN_TurnAtNearestPlayer();
+    // HUMAN_WeaponOnArm(true);
+}

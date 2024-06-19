@@ -6,6 +6,8 @@
 
 # Un-ignore the directory itself
 !MISSIONS/
+!SCRIPTS/
 
 # Ensure all contents within the directory are tracked
 !MISSIONS/**
+!SCRIPTS/**
