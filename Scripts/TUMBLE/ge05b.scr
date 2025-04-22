@@ -1,0 +1,17 @@
+printf("GE05b started");
+
+FRAME player;   FRM_FindFrame(player, "_PLAYER_ 0");
+
+OnSignal(69) {
+    printf("GE05b received signal 69!");
+
+    HUMAN_TurnAtNearestPlayer();
+    
+    Delay(5000);
+
+    HUMAN_Move("escape-boss");
+
+    Delay(500);
+
+    Human_suspend(true);
+}

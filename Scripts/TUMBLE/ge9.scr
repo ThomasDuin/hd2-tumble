@@ -1,0 +1,2 @@
+#include "human_turn.scr"
+printf("GE9 started");

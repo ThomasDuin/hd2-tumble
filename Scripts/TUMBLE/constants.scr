@@ -1,0 +1,2 @@
+INTEGER sightRange			= 300;
+INTEGER hearRange			= 300;

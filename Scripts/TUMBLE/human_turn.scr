@@ -1,0 +1,19 @@
+printf("Human_turn.scr loaded");
+
+OnSignal(69) {
+    printf("Human_turn");
+
+    HUMAN_TurnAtNearestPlayer();
+
+    Delay(5000);
+    
+    HUMAN_WeaponOnArm(true);
+
+    Delay(5000);
+
+    HUMAN_WeaponUp(true);
+
+    Delay(5000);
+
+    EndScript();
+}

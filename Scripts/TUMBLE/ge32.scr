@@ -1,0 +1,2 @@
+#include "human_turn.scr"
+printf("GE32 started");
