@@ -16,6 +16,8 @@ FRAME ge8;  FRM_FindFrame(ge8, "GE8");
 FRAME ge9;  FRM_FindFrame(ge9, "GE9");
 FRAME ge32;  FRM_FindFrame(ge32, "GE32");
 
+FRAME door;	FRM_FindFrame(door, "m_dv_stOP_006");
+
 
 Whenever inrange(_PlayerInRange(3)){
     printf("you are in range of detector1!");

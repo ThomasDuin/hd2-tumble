@@ -1,2 +1,25 @@
-#include "human_turn.scr"
+// #include "human_turn.scr"
 printf("GE9 started");
+
+
+OnSignal(69) {
+    printf("Human_turn");
+
+    HUMAN_SetOptimized(1);
+    Delay(1500);
+
+    HUMAN_Move("watch");
+    HUMAN_TurnAtNearestPlayer();
+
+    Delay(3000);
+    
+    HUMAN_WeaponOnArm(true);
+
+    Delay(2500);
+
+    HUMAN_WeaponUp(true);
+
+    Delay(5000);
+
+    EndScript();
+}
