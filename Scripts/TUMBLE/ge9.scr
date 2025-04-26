@@ -23,3 +23,9 @@ OnSignal(69) {
 
     EndScript();
 }
+
+OnSignal(70) {
+    printf("Signal 70");
+
+    HUMAN_Suspend(true);
+}
