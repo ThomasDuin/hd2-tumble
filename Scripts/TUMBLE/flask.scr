@@ -1,0 +1,7 @@
+FRAME this;			FRM_GetMyFrame(this);
+printf("Flask start");
+
+OnDeath() {
+    printf("Flask dead");
+    // MakeExplosion(this, 1500000, 8000);
+}
