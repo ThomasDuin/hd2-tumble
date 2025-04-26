@@ -3,5 +3,6 @@ printf("Flask start");
 
 OnDeath() {
     printf("Flask dead");
+     PlayAvi("rpr-anni.bik");
     // MakeExplosion(this, 1500000, 8000);
 }

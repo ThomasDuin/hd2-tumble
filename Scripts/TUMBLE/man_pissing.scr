@@ -1,0 +1,17 @@
+printf("Man pissing loaded");
+
+FRAME this;					FRM_GetMyFrame(this);
+
+
+// stores the created particle
+integer p;
+Frame piss;		Frm_FindFrame(piss,"piss");
+
+HUMAN_SetOptimized(1);
+HUMAN_SetAnim("%%chcije",900, 900, 1);
+FRM_CreateIndexedParticle(21, piss, p);
+
+OnDeath() {
+    FRM_CreateParticle(53, this);
+    FRM_DestroyIndexedParticle(p);
+}
