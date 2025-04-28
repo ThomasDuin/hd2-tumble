@@ -1,8 +1,8 @@
 FRAME this;			FRM_GetMyFrame(this);
-printf("Flask start");
+// printf("Flask start");
 
 OnDeath() {
-    printf("Flask dead");
-     PlayAvi("rpr-anni.bik");
+    // printf("Flask dead");
+    PlayAvi("rpr-anni.bik");
     // MakeExplosion(this, 1500000, 8000);
 }

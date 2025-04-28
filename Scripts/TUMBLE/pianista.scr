@@ -1,0 +1,12 @@
+Frame sit;			FRM_FindFrame(sit, "pianista_sit");
+
+HUMAN_SetOptimized(2);
+
+HUMAN_ACTIVITY_Sit(sit);
+HUMAN_SetAnim("%%piano", 200, 200, 1);
+
+
+// frames to set on sound?
+// FRM_SetOn(zvuk, true);
+// FRM_SetOn(zvuk2, true);
+

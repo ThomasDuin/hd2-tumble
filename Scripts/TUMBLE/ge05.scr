@@ -1,2 +1,2 @@
 #include "human_turn.scr"
-printf("GE05 started");
+// printf("GE05 started");

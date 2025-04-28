@@ -17,6 +17,13 @@ FRAME ge6;  FRM_FindFrame(ge6, "GE6");
 FRAME ge8;  FRM_FindFrame(ge8, "GE8");
 FRAME ge9;  FRM_FindFrame(ge9, "GE9");
 FRAME ge32;  FRM_FindFrame(ge32, "GE32");
+FRAME mg42Initial; FRM_FindFrame(mg42Initial, "w_mg42Crouch_r1");
+
+FRAME m_bedna01_r1; FRM_FindFrame(m_bedna01_r1, "m_bedna01_r1");
+FRAME m_bedna1_r1; FRM_FindFrame(m_bedna1_r1, "m_bedna1_r1");
+FRAME m_bedna3_r1; FRM_FindFrame(m_bedna3_r1, "m_bedna3_r1");
+FRAME m_bedna2_r1; FRM_FindFrame(m_bedna2_r1, "m_bedna2_r1");
+FRAME m_bedna4_r1; FRM_FindFrame(m_bedna4_r1, "m_bedna4_r1");
 
 FRAME door;	FRM_FindFrame(door, "m_dv_stOP_006");
 SetActorState(door, 1);
@@ -45,6 +52,15 @@ Whenever inrange(_PlayerInRange(3)) {
     SendSignal(ge8, 70);
     SendSignal(ge9, 70);
     SendSignal(ge32, 70);
+    SendSignal(mg42Initial, 70);
+
+    FRM_SetOn(m_bedna01_r1, false);
+    FRM_SetOn(m_bedna1_r1, false);
+    FRM_SetOn(m_bedna3_r1, false);
+    FRM_SetOn(m_bedna2_r1, false);
+    FRM_SetOn(m_bedna4_r1, false);
+
+    SendSignal(m_bedna01_r1, 70);
 }
 
 

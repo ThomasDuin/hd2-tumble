@@ -1,9 +1,9 @@
 // #include "human_turn.scr"
-printf("GE9 started");
+// printf("GE9 started");
 
 
 OnSignal(69) {
-    printf("Human_turn");
+    // printf("Human_turn");
 
     HUMAN_SetOptimized(1);
     Delay(1500);
@@ -25,7 +25,7 @@ OnSignal(69) {
 }
 
 OnSignal(70) {
-    printf("Signal 70");
+    // printf("Signal 70");
 
     HUMAN_Suspend(true);
 }
