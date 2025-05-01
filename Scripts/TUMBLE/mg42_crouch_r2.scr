@@ -1,0 +1,9 @@
+printf("mg42 crouch r2");
+
+FRAME this;					FRM_GetMyFrame(this);
+    FRM_SetOn(this, false);
+
+OnSignal(70) {
+    printf("mg42 crouch initial signal");
+    FRM_SetOn(this, true);
+}

@@ -1,0 +1,7 @@
+// #include "round2.scr"
+HUMAN_Suspend(true);
+
+OnSignal(70) {
+    HUMAN_Suspend(false);
+    HUMAN_WeaponOnArm(true);
+}

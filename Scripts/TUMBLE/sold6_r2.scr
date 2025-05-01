@@ -1,1 +1,12 @@
 // man behind MG42
+// #include "round2.scr"
+// w_mg42Crouch_r2
+
+HUMAN_Suspend(true);
+
+OnSignal(70) {
+    HUMAN_Suspend(false);
+    Delay(2500);
+    HUMAN_BoardVehicle("w_mg42Crouch_r2", true, 0);
+}
+

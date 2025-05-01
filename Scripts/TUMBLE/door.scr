@@ -1,0 +1,12 @@
+FRAME door;	FRM_FindFrame(door, "m_dv_stOP_006");
+SetActorState(door, 1);
+
+OnSignal(70) {
+    SetActorState(door, 0);
+    // SetWhenever(CLOSE, true);
+}
+
+Whenever CLOSE (_ACTOR_GetState(door) == 0)  {
+    printf("Door is closed");
+    DOOR_Lock(door, 1);
+}

@@ -1,7 +1,5 @@
 printf("Detector2 started");
 
-SetWhenever(CLOSE, false);
-
 FRAME ge1;  FRM_FindFrame(ge1, "GE1");
 FRAME ge2;  FRM_FindFrame(ge2, "GE2");
 FRAME ge3;  FRM_FindFrame(ge3, "GE3");
@@ -19,25 +17,31 @@ FRAME ge9;  FRM_FindFrame(ge9, "GE9");
 FRAME ge32;  FRM_FindFrame(ge32, "GE32");
 FRAME mg42Initial; FRM_FindFrame(mg42Initial, "w_mg42Crouch_r1");
 
-FRAME m_bedna01_r1; FRM_FindFrame(m_bedna01_r1, "m_bedna01_r1");
-FRAME m_bedna1_r1; FRM_FindFrame(m_bedna1_r1, "m_bedna1_r1");
-FRAME m_bedna3_r1; FRM_FindFrame(m_bedna3_r1, "m_bedna3_r1");
-FRAME m_bedna2_r1; FRM_FindFrame(m_bedna2_r1, "m_bedna2_r1");
-FRAME m_bedna4_r1; FRM_FindFrame(m_bedna4_r1, "m_bedna4_r1");
+FRAME box1_r2; FRM_FindFrame(box1_r2, "box1_r2");
+FRAME box2_r2; FRM_FindFrame(box2_r2, "box2_r2");
+
+FRAME box1_r1; FRM_FindFrame(box1_r1, "box1_r1");
+FRAME box2_r1; FRM_FindFrame(box2_r1, "box2_r1");
+
+FRAME sold_r2;  FRM_FindFrame(sold_r2, "SOLD_R2");
+FRAME sold1_r2;  FRM_FindFrame(sold1_r2, "SOLD1_R2");
+FRAME sold2_r2;  FRM_FindFrame(sold2_r2, "SOLD2_R2");
+FRAME sold3_r2;  FRM_FindFrame(sold3_r2, "SOLD3_R2");
+FRAME sold4_r2;  FRM_FindFrame(sold4_r2, "SOLD4_R2");
+FRAME sold5_r2;  FRM_FindFrame(sold5_r2, "SOLD5_R2");
+FRAME sold6_r2;  FRM_FindFrame(sold6_r2, "SOLD6_R2");
+
+FRAME henchman_r2;  FRM_FindFrame(henchman_r2, "henchman_r2");
+
+FRAME w_mg42Crouch_r2; FRM_FindFrame(w_mg42Crouch_r2, "w_mg42Crouch_r2");
 
 FRAME door;	FRM_FindFrame(door, "m_dv_stOP_006");
-SetActorState(door, 1);
 
 Whenever inrange(_PlayerInRange(3)) {
-    printf("you are in range of detector2!");
+    printf("you are in range of detector2!!");
 
-    SetActorState(door, 0);
-    SetWhenever(CLOSE, true);
+    SendSignal(door, 70);
 
-    // Delay(1000);
-    SendSignal(ge05B, 70);
-
-    // Delay(1000);
     SendSignal(ge1, 70);
     SendSignal(ge2, 70);
     SendSignal(ge3, 70);
@@ -52,19 +56,33 @@ Whenever inrange(_PlayerInRange(3)) {
     SendSignal(ge8, 70);
     SendSignal(ge9, 70);
     SendSignal(ge32, 70);
+    printf("what -1");
     SendSignal(mg42Initial, 70);
 
-    FRM_SetOn(m_bedna01_r1, false);
-    FRM_SetOn(m_bedna1_r1, false);
-    FRM_SetOn(m_bedna3_r1, false);
-    FRM_SetOn(m_bedna2_r1, false);
-    FRM_SetOn(m_bedna4_r1, false);
+    // printf("what 0");
 
-    SendSignal(m_bedna01_r1, 70);
-}
+    SendSignal(w_mg42Crouch_r2, 70);
 
+    // printf("what");
 
-Whenever CLOSE (_ACTOR_GetState(door) == 0)  {
-    printf("Door is closed");
-    DOOR_Lock(door, 1);
+    SendSignal(box1_r2, 70);
+    SendSignal(box2_r2, 70);
+
+    SendSignal(box1_r1, 70);
+    SendSignal(box2_r1, 70);
+
+    // printf("what2");
+
+    SendSignal(sold_r2, 70);
+    SendSignal(sold1_r2, 70);
+    SendSignal(sold2_r2, 70);
+    SendSignal(sold3_r2, 70);
+    SendSignal(sold4_r2, 70);
+    SendSignal(sold5_r2, 70);
+    SendSignal(sold6_r2, 70);
+    SendSignal(henchman_r2, 70);
+
+    // printf("what3");
+
+    CheckpointJoin("r1", "r2");	
 }
