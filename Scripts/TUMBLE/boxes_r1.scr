@@ -2,8 +2,6 @@ printf("boxes initial");
 
 FRAME cleanup;  FRM_FindFrame(cleanup, "cleanup");
 FRAME this;		FRM_GetMyFrame(this);
-// FRM_SetOn(this, false);
-// FRM_TeleportNearFrame(this, cleanup, true);
 
 OnSignal(70) {
     printf("boxes signal");

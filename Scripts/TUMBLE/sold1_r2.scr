@@ -1,1 +1,5 @@
 #include "round2.scr"
+
+OnAlarm() {
+    EndScript();
+}

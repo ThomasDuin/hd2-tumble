@@ -1,0 +1,13 @@
+FRAME door;	FRM_FindFrame(door, "m_dv_stOP_006");
+
+FRAME sold7_r2;  FRM_FindFrame(sold7_r2, "SOLD7_R2");
+FRAME sold8_r2;  FRM_FindFrame(sold8_r2, "SOLD8_R2");
+
+Whenever inrange(_PlayerInRange(3)) {
+    printf("you are in range of detector3!!");
+
+    SendSignal(door, 71);
+
+    SendSignal(sold7_r2, 70);
+    SendSignal(sold8_r2, 70);
+}

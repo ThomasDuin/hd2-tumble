@@ -10,3 +10,6 @@ OnSignal(70) {
     HUMAN_BoardVehicle("w_mg42Crouch_r2", true, 0);
 }
 
+OnAlarm() {
+    EndScript();
+}
