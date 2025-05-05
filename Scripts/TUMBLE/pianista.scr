@@ -12,8 +12,3 @@ OnSignal(69) {
     Delay(1000);
     HUMAN_ACTIVITY_Point(Detector1);
 }
-
-// frames to set on sound?
-// FRM_SetOn(zvuk, true);
-// FRM_SetOn(zvuk2, true);
-
