@@ -7,7 +7,9 @@
 # Un-ignore the directory itself
 !MISSIONS/
 !SCRIPTS/
+!SOUNDS/
 
 # Ensure all contents within the directory are tracked
 !MISSIONS/**
 !SCRIPTS/**
+!SOUNDS/**
