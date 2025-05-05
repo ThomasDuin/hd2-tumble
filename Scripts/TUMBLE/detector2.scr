@@ -37,6 +37,14 @@ FRAME w_mg42Crouch_r2; FRM_FindFrame(w_mg42Crouch_r2, "w_mg42Crouch_r2");
 
 FRAME door;	FRM_FindFrame(door, "m_dv_stOP_006");
 
+FRAME table1_r1;	FRM_FindFrame(table1_r1, "table1_r1");
+FRAME table2_r1;	FRM_FindFrame(table2_r1, "table2_r1");
+FRAME table3_r1;	FRM_FindFrame(table3_r1, "table3_r1");
+
+FRAME table1_r2;	FRM_FindFrame(table1_r2, "table1_r2");
+FRAME table2_r2;	FRM_FindFrame(table2_r2, "table2_r2");
+FRAME table3_r2;	FRM_FindFrame(table3_r2, "table3_r2");
+
 Whenever inrange(_PlayerInRange(3)) {
     printf("you are in range of detector2!!");
 
@@ -81,6 +89,14 @@ Whenever inrange(_PlayerInRange(3)) {
     SendSignal(sold5_r2, 70);
     SendSignal(sold6_r2, 70);
     SendSignal(henchman_r2, 70);
+
+    SendSignal(table1_r1, 70);
+    SendSignal(table2_r1, 70);
+    SendSignal(table3_r1, 70);
+
+    SendSignal(table1_r2, 70);
+    SendSignal(table2_r2, 70);
+    SendSignal(table3_r2, 70);
 
     // printf("what3");
 
