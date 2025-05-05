@@ -9,8 +9,9 @@ OnSignal(70) {
 }
 
 OnSignal(71) {
-    SetActorState(door, 1);
     DOOR_Lock(door, 0);
+    Delay(100);
+    SetActorState(door, 1);    
 }
 
 //Whenever CLOSE (_ACTOR_GetState(door) == 0)  {

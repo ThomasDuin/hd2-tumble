@@ -5,7 +5,7 @@ FRAME sold8_r2;  FRM_FindFrame(sold8_r2, "SOLD8_R2");
 
 FRAME sound_r3; FRM_FindFrame(sound_r3, "sound_r3");
 
-Whenever inrange(_PlayerInRange(3)) {
+Whenever inrange(_PlayerInRange(2)) {
     printf("you are in range of detector3!!");
 
     SendSignal(door, 71);
