@@ -1,11 +1,12 @@
 // printf("GE05b started");
-
-FRAME player;   FRM_FindFrame(player, "_PLAYER_ 0");
+FRAME sound_r1; FRM_FindFrame(sound_r1, "sound_r1");
 
 OnSignal(69) {
     // printf("GE05b received signal 69!");
 
     HUMAN_TurnAtNearestPlayer();
+    
+    FRM_SetOn(sound_r1, true);
     
     Delay(5000);
 
