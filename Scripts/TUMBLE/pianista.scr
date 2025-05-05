@@ -1,10 +1,17 @@
 Frame sit;			FRM_FindFrame(sit, "pianista_sit");
+Frame detector1;	FRM_FindFrame(detector1, "Detector1");
+
 
 HUMAN_SetOptimized(2);
 
 HUMAN_ACTIVITY_Sit(sit);
 HUMAN_SetAnim("%%piano", 200, 200, 1);
 
+OnSignal(69) {
+    HUMAN_SetAnim("", 100, 100, false);
+    Delay(1000);
+    HUMAN_ACTIVITY_Point(Detector1);
+}
 
 // frames to set on sound?
 // FRM_SetOn(zvuk, true);

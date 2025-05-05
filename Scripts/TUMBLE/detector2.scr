@@ -45,6 +45,8 @@ FRAME table1_r2;	FRM_FindFrame(table1_r2, "table1_r2");
 FRAME table2_r2;	FRM_FindFrame(table2_r2, "table2_r2");
 FRAME table3_r2;	FRM_FindFrame(table3_r2, "table3_r2");
 
+FRAME sound_r2; FRM_FindFrame(sound_r2, "sound_r2");
+
 Whenever inrange(_PlayerInRange(3)) {
     printf("you are in range of detector2!!");
 
@@ -101,4 +103,7 @@ Whenever inrange(_PlayerInRange(3)) {
     // printf("what3");
 
     CheckpointJoin("r1", "r2");	
+
+    FRM_SetOn(sound_r2, true);
+
 }

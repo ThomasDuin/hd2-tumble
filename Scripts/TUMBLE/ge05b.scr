@@ -6,6 +6,8 @@ OnSignal(69) {
 
     HUMAN_TurnAtNearestPlayer();
     
+    Delay(250);
+
     FRM_SetOn(sound_r1, true);
     
     Delay(5000);

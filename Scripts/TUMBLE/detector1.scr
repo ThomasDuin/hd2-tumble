@@ -15,16 +15,20 @@ FRAME ge6;  FRM_FindFrame(ge6, "GE6");
 FRAME ge8;  FRM_FindFrame(ge8, "GE8");
 FRAME ge9;  FRM_FindFrame(ge9, "GE9");
 FRAME ge32;  FRM_FindFrame(ge32, "GE32");
+FRAME pianista; FRM_FindFrame(pianista, "pianista");
 
 FRAME door;	FRM_FindFrame(door, "m_dv_stOP_006");
 FRAME sound_piano_r1; FRM_FindFrame(sound_piano_r1, "sound_piano_r1");
+FRAME sound_piano_slam_r1; FRM_FindFrame(sound_piano_slam_r1, "sound_piano_slam_r1");
 
 Whenever inrange(_PlayerInRange(3)){
     printf("you are in range of detector1!");
 
     Delay(1000);
     FRM_SetOn(sound_piano_r1, false);
-    Delay(1000);
+    FRM_SetOn(sound_piano_slam_r1, true);
+    SendSignal(pianista, 69);
+    Delay(1500);
 
     SendSignal(ge05B, 69);
 
