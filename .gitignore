@@ -1,6 +1,8 @@
 #ignore everything
 *
 
+!mpmaplist.txt
+
 # except
 #!scripts
 

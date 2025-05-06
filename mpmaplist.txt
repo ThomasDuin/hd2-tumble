@@ -1,0 +1,41 @@
+<MAP_LIST>
+<GAMESTYLE  type="cooperative">
+<MAP name="Tumble" dir="TUMBLE"> 
+<ALLOWEDITEMS  version="0.1">
+<ITEM item_id="1" item_num="1" ammo_num="10"/>
+<ITEM item_id="2" item_num="1" ammo_num="12"/>
+<ITEM item_id="6" item_num="1" ammo_num="10"/>
+<ITEM item_id="7" item_num="1" ammo_num="12"/>
+<ITEM item_id="9" item_num="1"/>
+<ITEM item_id="10" item_num="1" ammo_num="10"/>
+<ITEM item_id="11" item_num="1" ammo_num="10"/>
+<ITEM item_id="14" item_num="1" ammo_num="10"/>
+<ITEM item_id="15" item_num="1" ammo_num="10"/>
+<ITEM item_id="17" item_num="1" ammo_num="10"/>
+<ITEM item_id="20" item_num="1" ammo_num="15"/>
+<ITEM item_id="21" item_num="1" ammo_num="15"/>
+<ITEM item_id="22" item_num="1" ammo_num="15"/>
+<ITEM item_id="28" item_num="1" ammo_num="10"/>
+<ITEM item_id="29" item_num="1" ammo_num="10"/>
+<ITEM item_id="53" item_num="1"/>
+<ITEM item_id="54" item_num="3"/>
+<ITEM item_id="57" item_num="1"/>
+<ITEM item_id="62" item_num="2"/>
+<ITEM item_id="70" item_num="1"/>
+<ITEM item_id="99" item_num="1"/>
+<ITEM item_id="101" item_num="1"/>
+<ITEM item_id="115" item_num="1" ammo_num="1"/>
+<ITEM item_id="118" item_num="1" ammo_num="1"/>
+<ITEM item_id="120" item_num="0" ammo_num="1"/>
+<ITEM item_id="121" item_num="1" ammo_num="1"/>
+<ITEM item_id="123" item_num="1" ammo_num="1"/>
+<ITEM item_id="124" item_num="1" ammo_num="1"/>
+<ITEM item_id="231" item_num="1"/>
+<ITEM item_id="261" item_num="1" ammo_num="8"/>
+</ALLOWEDITEMS>
+<ALLOWEDPRESETS>"Allied gunner" "Rifleman1"</ALLOWEDPRESETS>
+<OBJECTIVE allied_text="4617" axis_text="4617" value="03"/>
+</MAP>
+
+</GAMESTYLE>
+</MAP_LIST>
