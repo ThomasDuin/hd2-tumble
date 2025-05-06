@@ -1,6 +1,8 @@
 Frame sit;			FRM_FindFrame(sit, "pianista_sit");
 Frame detector1;	FRM_FindFrame(detector1, "Detector1");
-
+FRAME sound_piano_on_hit_r2; FRM_FindFrame(sound_piano_on_hit_r2, "sound_piano_on_hit_r2");
+FRAME sound_piano_r2; FRM_FindFrame(sound_piano_r2, "sound_piano_r2");
+FRAME sound_pianista_death; FRM_FindFrame(sound_pianista_death, "sound_pianista_death");
 
 HUMAN_SetOptimized(2);
 
@@ -11,4 +13,22 @@ OnSignal(69) {
     HUMAN_SetAnim("", 100, 100, false);
     Delay(1000);
     HUMAN_ACTIVITY_Point(Detector1);
+}
+
+OnSignal(70) {
+    HUMAN_SetAnim("%%piano", 200, 200, 1);
+}
+
+OnAlarm() {    
+    FRM_SetOn(sound_piano_r2, false);
+    FRM_SetOn(sound_piano_on_hit_r2, true);
+}
+
+OnDeath(){
+    FRM_SetOn(sound_piano_r2, false);
+    FRM_SetOn(sound_piano_on_hit_r2, false);
+
+    Delay(250);
+
+    FRM_SetOn(sound_pianista_death, true);
 }
