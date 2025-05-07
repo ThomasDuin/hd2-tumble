@@ -1,0 +1,6 @@
+printf("end.scr");
+
+Whenever inrange(_PlayerInRange(2)) {
+    printf("end.scr inrange");
+    SetObjectiveStatus(1, 1);
+}
