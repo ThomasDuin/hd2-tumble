@@ -1,0 +1,33 @@
+FRAME ge1;  FRM_FindFrame(ge1, "GE1");
+FRAME ge2;  FRM_FindFrame(ge2, "GE2");
+FRAME ge3;  FRM_FindFrame(ge3, "GE3");
+FRAME ge03;  FRM_FindFrame(ge03, "GE03");
+FRAME ge03b;  FRM_FindFrame(ge03b, "GE03B");
+FRAME ge03b1;  FRM_FindFrame(ge03b1, "GE03B1");
+FRAME ge4;  FRM_FindFrame(ge4, "GE4");
+FRAME ge04;  FRM_FindFrame(ge04, "GE04");
+FRAME ge5;  FRM_FindFrame(ge5, "GE5");
+FRAME ge05;  FRM_FindFrame(ge05, "GE05");
+FRAME ge05B;  FRM_FindFrame(ge05B, "GE05B");
+FRAME ge6;  FRM_FindFrame(ge6, "GE6");
+FRAME ge8;  FRM_FindFrame(ge8, "GE8");
+FRAME ge9;  FRM_FindFrame(ge9, "GE9");
+FRAME ge32;  FRM_FindFrame(ge32, "GE32");
+
+Whenever inrange(_PlayerInRange(3)) {
+    printf("for sure detector");    
+    SendSignal(ge1, 70);
+    SendSignal(ge2, 70);
+    SendSignal(ge3, 70);
+    SendSignal(ge03, 70);
+    SendSignal(ge03b, 70);
+    SendSignal(ge03b1, 70);
+    SendSignal(ge4, 70);
+    SendSignal(ge04, 70);
+    SendSignal(ge5, 70);
+    SendSignal(ge05, 70);
+    SendSignal(ge6, 70);
+    SendSignal(ge8, 70);
+    SendSignal(ge9, 70);
+    SendSignal(ge32, 70);
+}
