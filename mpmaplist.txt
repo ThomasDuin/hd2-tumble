@@ -3,6 +3,8 @@
         <MAP name="Tumble" dir="TUMBLE"> 
             <ALLOWEDITEMS  version="0.1">
                 <ITEM item_id="123" item_num="1" />
+                <ITEM item_id="53" item_num="5"/>
+                <ITEM item_id="54" item_num="5"/>
             </ALLOWEDITEMS>
             <ALLOWEDPRESETS>"Allied gunner" "Rifleman1"</ALLOWEDPRESETS>
             <OBJECTIVE allied_text="4617" axis_text="4617" value="03"/>
