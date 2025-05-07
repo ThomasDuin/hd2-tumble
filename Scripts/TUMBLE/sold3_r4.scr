@@ -1,0 +1,16 @@
+Frame lie;			FRM_FindFrame(lie, "lie");
+
+HUMAN_SetOptimized(2);
+
+HUMAN_SETMODE_Lie();
+HUMAN_SetAnim("%%ospalozral",100,100,1);
+
+OnSignal(80) {
+    HUMAN_SetAnim("",100,100,1);
+    // HUMAN_Stop();
+    // HUMAN_SetMODE_Stand();
+    HUMAN_TurnAtNearestPlayer();
+    HUMAN_WeaponOnArm(true);
+    Delay(27000);
+    EndScript();
+}

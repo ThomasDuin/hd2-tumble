@@ -1,0 +1,8 @@
+OnSignal(80) {
+    HUMAN_Stop();
+    HUMAN_SetMODE_Stand();
+    HUMAN_TurnAtNearestPlayer();
+    HUMAN_WeaponOnArm(true);
+    Delay(27000);
+    EndScript();
+}

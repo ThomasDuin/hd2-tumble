@@ -1,0 +1,20 @@
+printf("d-punished2");
+
+FRAME sound_punished_1; FRM_FindFrame(sound_punished_1, "sound_punished_1");
+FRAME sound_punished_2; FRM_FindFrame(sound_punished_2, "sound_punished_2");
+FRAME sound_punished_3; FRM_FindFrame(sound_punished_3, "sound_punished_3");
+
+FRAME punished; FRM_FindFrame(punished, "punished");
+
+Whenever inrange(_PlayerInRange(2)) {
+    printf("in range d-punished2");
+    FRM_SetOn(sound_punished_1, false);
+    SendSignal(punished, 70);
+    FRM_SetOn(sound_punished_2, true);
+
+    Delay(7000);
+
+    FRM_SetOn(sound_punished_3, true);
+
+    SendSignal(punished, 71);
+}

@@ -1,0 +1,11 @@
+OnSignal(70) {
+    HUMAN_TurnAtNearestPlayer();
+}
+
+OnSignal(71) {
+    HUMAN_WeaponOnArm(true);
+    Delay(1000);
+    HUMAN_WeaponUp(true);
+    Delay(4000);
+    EndScript();
+}

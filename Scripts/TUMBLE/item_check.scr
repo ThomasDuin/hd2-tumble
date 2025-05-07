@@ -1,0 +1,22 @@
+FRAME sound_r4; FRM_FindFrame(sound_r4, "sound_r4");
+FRAME sound_caught_r4; FRM_FindFrame(sound_caught_r4, "sound_caught_r4");
+FRAME key;
+FRAME door; FRM_FindFrame(door, "m_dv_stOP_004");
+
+FRAME sold_r4; FRM_FindFrame(sold_r4, "sold_r4");
+FRAME sold1_r4; FRM_FindFrame(sold1_r4, "sold1_r4");
+FRAME sold2_r4; FRM_FindFrame(sold2_r4, "sold2_r4");
+FRAME sold3_r4; FRM_FindFrame(sold3_r4, "sold3_r4");
+
+Whenever ininv (_MP_IsItemInTeamInventory(1, 240, key)) {
+    printf("item in inventory");
+
+    SetActorState(door, 0);
+    FRM_SetOn(sound_r4, false);
+    FRM_SetOn(sound_caught_r4, true);
+
+    SendSignal(sold_r4, 80);
+    SendSignal(sold1_r4, 80);
+    SendSignal(sold2_r4, 80);
+    SendSignal(sold3_r4, 80);
+}

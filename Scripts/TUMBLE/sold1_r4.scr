@@ -1,0 +1,14 @@
+Frame bench_sit2;			FRM_FindFrame(bench_sit2, "bench_sit2");
+
+HUMAN_SetOptimized(2);
+
+HUMAN_ACTIVITY_Sit(bench_sit2);
+
+OnSignal(80) {
+    HUMAN_Stop();
+    HUMAN_SetMODE_Stand();
+    HUMAN_TurnAtNearestPlayer();
+    HUMAN_WeaponOnArm(true);
+    Delay(27000);
+    EndScript();
+}

@@ -1,0 +1,6 @@
+FRAME sound_r4; FRM_FindFrame(sound_r4, "sound_r4");
+
+Whenever inrange(_PlayerInRange(3)) {
+    printf("you are in range of detector4!!");
+    FRM_SetOn(sound_r4, true);
+}
