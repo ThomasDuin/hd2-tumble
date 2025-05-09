@@ -3,6 +3,9 @@
 
 !mpmaplist.txt
 
+!Gamemovie/
+!Gamemovie/rpr-anni.bik
+
 # except
 #!scripts
 
@@ -15,3 +18,4 @@
 !MISSIONS/**
 !SCRIPTS/**
 !SOUNDS/**
+
