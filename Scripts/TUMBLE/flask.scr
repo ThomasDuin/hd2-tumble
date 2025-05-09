@@ -1,3 +1,10 @@
+//
+// Made by: James Conway / Stompinidus
+// Email: stompinidus@gmail.com
+// Discord: jamesconway
+// Github: https://github.com/ThomasDuin/hd2-tumble
+//
+
 FRAME this;			FRM_GetMyFrame(this);
 printf("Flask start");
 

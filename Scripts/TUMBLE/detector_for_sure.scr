@@ -1,3 +1,10 @@
+//
+// Made by: James Conway / Stompinidus
+// Email: stompinidus@gmail.com
+// Discord: jamesconway
+// Github: https://github.com/ThomasDuin/hd2-tumble
+//
+
 FRAME ge1;  FRM_FindFrame(ge1, "GE1");
 FRAME ge2;  FRM_FindFrame(ge2, "GE2");
 FRAME ge3;  FRM_FindFrame(ge3, "GE3");

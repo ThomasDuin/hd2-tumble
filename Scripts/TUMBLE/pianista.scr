@@ -1,3 +1,10 @@
+//
+// Made by: James Conway / Stompinidus
+// Email: stompinidus@gmail.com
+// Discord: jamesconway
+// Github: https://github.com/ThomasDuin/hd2-tumble
+//
+
 Frame sit;			FRM_FindFrame(sit, "pianista_sit");
 Frame detector1;	FRM_FindFrame(detector1, "Detector1");
 FRAME sound_piano_on_hit_r2; FRM_FindFrame(sound_piano_on_hit_r2, "sound_piano_on_hit_r2");

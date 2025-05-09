@@ -1,3 +1,10 @@
+//
+// Made by: James Conway / Stompinidus
+// Email: stompinidus@gmail.com
+// Discord: jamesconway
+// Github: https://github.com/ThomasDuin/hd2-tumble
+//
+
 OnSignal(70) {
     HUMAN_TurnAtNearestPlayer();
 }

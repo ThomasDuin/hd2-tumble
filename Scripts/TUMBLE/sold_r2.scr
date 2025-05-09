@@ -1,5 +1,13 @@
 #include "round2.scr"
 
+//
+// Made by: James Conway / Stompinidus
+// Email: stompinidus@gmail.com
+// Discord: jamesconway
+// Github: https://github.com/ThomasDuin/hd2-tumble
+//
+
+
 OnAlarm() {
     EndScript();
 }

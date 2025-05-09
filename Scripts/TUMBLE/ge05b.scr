@@ -1,3 +1,10 @@
+//
+// Made by: James Conway / Stompinidus
+// Email: stompinidus@gmail.com
+// Discord: jamesconway
+// Github: https://github.com/ThomasDuin/hd2-tumble
+//
+
 // printf("GE05b started");
 FRAME sound_r1; FRM_FindFrame(sound_r1, "sound_r1");
 

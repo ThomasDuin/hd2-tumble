@@ -1,12 +1,6 @@
-#include "human_turn.scr"
-
 //
 // Made by: James Conway / Stompinidus
 // Email: stompinidus@gmail.com
 // Discord: jamesconway
 // Github: https://github.com/ThomasDuin/hd2-tumble
 //
-
-
-
-// printf("GE03 started");

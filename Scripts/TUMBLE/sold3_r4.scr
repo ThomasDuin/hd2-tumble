@@ -1,3 +1,10 @@
+//
+// Made by: James Conway / Stompinidus
+// Email: stompinidus@gmail.com
+// Discord: jamesconway
+// Github: https://github.com/ThomasDuin/hd2-tumble
+//
+
 Frame lie;			FRM_FindFrame(lie, "lie");
 
 HUMAN_SetOptimized(2);

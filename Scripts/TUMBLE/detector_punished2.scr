@@ -1,3 +1,10 @@
+//
+// Made by: James Conway / Stompinidus
+// Email: stompinidus@gmail.com
+// Discord: jamesconway
+// Github: https://github.com/ThomasDuin/hd2-tumble
+//
+
 printf("d-punished2");
 
 FRAME sound_punished_1; FRM_FindFrame(sound_punished_1, "sound_punished_1");
